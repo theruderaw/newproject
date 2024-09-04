@@ -1,0 +1,45 @@
+/* Container for the entire Shower component */
+.shower-container {
+    position: relative; /* For positioning the overlay */
+    display: inline-block; /* Ensures proper sizing of the container */
+    width: 40%; /* Adjusted width to percentage */
+    max-width: 400px; /* Optional: set a maximum width to maintain design consistency */
+    overflow: hidden; /* Ensures no overflow beyond the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the hover effect */
+    text-align: center; /* Center-aligns child elements like images */
+}
+
+/* Image styles within the container */
+.shower-container img {
+    max-width: 100%; /* Ensures image does not overflow container */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Makes sure the image is inline-block for proper centering */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Overlay styles */
+.shower-container .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; /* Adjusted to cover the top part */
+    bottom: 0; /* Adjusted to cover the bottom part */
+    background: rgba(0, 0, 0, 0.6); /* More transparent dark background */
+    color: #00bfff; /* Neon blue color for the text */
+    box-sizing: border-box; /* Ensures padding doesn't affect width/height calculations */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Ensure the overlay is above other elements */
+}
+
+/* Hover effect for the whole container */
+.shower-container:hover {
+    transform: scale(1.05); /* Slightly enlarge the entire component */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Neon glow effect */
+}
+
+/* Show the overlay on hover */
+.shower-container:hover .overlay {
+    opacity: 1; /* Show the overlay */
+}

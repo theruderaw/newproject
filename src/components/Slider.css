@@ -1,0 +1,43 @@
+/* Slider.css */
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust the max width as needed */
+    margin: auto;
+    overflow: visible;
+    color: #0ff; /* Neon cyan color for the title */
+    font-size: 1.5rem; /* Larger font size for the title */
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
+  }
+  
+  .slider-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  

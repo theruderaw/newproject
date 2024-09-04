@@ -1,0 +1,104 @@
+/* Ensure the body has no default margins or paddings that might affect alignment */
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+  }
+  
+  /* Navbar Styles */
+  .navbar-custom {
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Stick to the top of the viewport */
+    background-color: #1e1e1e; /* Dark background for the navbar */
+    border-bottom: 1px solid #333; /* Dark border below the navbar */
+    z-index: 1000; /* Ensure the navbar is above other content */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    padding: 0 15px; /* Horizontal padding for spacing */
+    height: 50px; /* Height of the navbar */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Neon glow effect */
+  }
+  
+  /* Navbar Brand */
+  .navbar-brand {
+    font-size: 1.25rem; /* Font size of the brand text */
+    margin-right: auto; /* Pushes the brand to the left */
+    text-decoration: none; /* Remove underline from brand link */
+    color: #0ff; /* Neon cyan color */
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.9); /* Neon glow effect */
+  }
+  
+  /* Navbar Toggler (Hamburger Icon) */
+  .navbar-toggler {
+    border: none; /* Remove default border */
+    background: transparent; /* Transparent background */
+    display: flex;
+    align-items: center; /* Center icon vertically */
+    margin-left: auto; /* Align toggler to the right */
+  }
+  
+  .navbar-toggler-icon {
+    width: 30px; /* Width of the toggler icon */
+    height: 20px; /* Height of the toggler icon */
+    position: relative;
+  }
+  
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #0ff; /* Neon cyan color */
+    position: absolute;
+    left: 0;
+  }
+  
+  .navbar-toggler-icon::before {
+    top: 0; /* Position of the top line */
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.8); /* Neon glow effect */
+  }
+  
+  .navbar-toggler-icon::after {
+    bottom: 0; /* Position of the bottom line */
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.8); /* Neon glow effect */
+  }
+  
+  /* Navbar Collapse */
+  .navbar-collapse {
+    flex-grow: 1; /* Allow content to grow and fill available space */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  /* Navbar Nav Items */
+  .navbar-nav {
+    display: flex; /* Display list items in a row */
+    align-items: center; /* Center items vertically */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove bullet points */
+  }
+  
+.navbar-fixed-top{
+    position: fixed;
+    top: 0px;
+}
+
+  .nav-item {
+    margin-left: 15px; /* Space between each nav item */
+  }
+  
+  .nav-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #0ff; /* Neon cyan color */
+    padding: 10px; /* Padding around links */
+    display: block; /* Ensure the link fills the nav item */
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.8); /* Neon glow effect */
+  }
+  
+  .nav-link:hover {
+    color: #0cc; /* Slightly darker neon cyan on hover */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Intensified neon glow effect */
+  }
+  

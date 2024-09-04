@@ -1,0 +1,100 @@
+/* App Container Styles */
+.App {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  overflow: visible;
+}
+
+/* Navbar Styles */
+.Navbar {
+  position: sticky;
+  top: 0;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  padding: 10px;
+  z-index: 1000;
+}
+
+.Navbar a {
+  color: #0ff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.Navbar a:hover {
+  color: #0cc;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+/* Slider Styles */
+.Slider {
+  margin: 20px 0;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Buttons Styles */
+.Buttons {
+  margin: 20px 0;
+}
+
+.Buttons button {
+  background-color: #0ff;
+  border: none;
+  color: #121212;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Buttons button:hover {
+  background-color: #0cc;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+/* About Section Styles */
+.About {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.About h2 {
+  color: #0ff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
+}
+
+/* Cards Section Styles */
+.Cards {
+  margin: 20px 0;
+}
+
+.Cards .card {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.Cards .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+}
+
+/* Parent Component Styles */
+.Parent {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}

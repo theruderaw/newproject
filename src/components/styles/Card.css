@@ -1,0 +1,46 @@
+/* Dark Neon Theme Styles */
+
+body {
+    background-color: #121212; /* Dark background for the whole page */
+    color: #e0e0e0; /* Light text color for contrast */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .card {
+    background: #1e1e1e; /* Dark background for the card */
+    border: 1px solid #333; /* Dark border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Neon glow effect */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.7); /* Intensified neon glow on hover */
+  }
+  
+  .card-title {
+    color: #0ff; /* Neon cyan color for the title */
+    font-size: 1.5rem; /* Larger font size for the title */
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.8); /* Neon glow effect */
+  }
+  
+  .card-text {
+    color: #ccc; /* Light grey text for the card content */
+    font-size: 1rem; /* Standard font size for the content */
+  }
+  
+  .btn-primary {
+    background-color: #0ff; /* Neon cyan background for the button */
+    border: 1px solid #0ff; /* Neon cyan border */
+    color: #121212; /* Dark text color for the button */
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.8); /* Neon glow effect */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0cc; /* Slightly darker cyan background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6); /* Neon glow effect on hover */
+  }
+  
